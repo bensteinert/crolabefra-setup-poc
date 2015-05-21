@@ -1,0 +1,5 @@
+
+include 'chromarenderer-java'
+include 'chromarenderer-java-benchmarks'
+
+rootProject.name = 'blog3-example'
