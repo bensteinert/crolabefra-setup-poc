@@ -1,0 +1,6 @@
+[submodule "chromarenderer-java"]
+	path = chromarenderer-java
+	url = ./chromarenderer-java
+[submodule "chromarenderer-java-benchmarks"]
+	path = chromarenderer-java-benchmarks
+	url = ./chromarenderer-java-benchmarks/
