@@ -1,6 +1,3 @@
-[submodule "chromarenderer-java"]
-	path = chromarenderer-java
-	url = git@github.com:bensteinert/chromarenderer-java.git
 [submodule "chromarenderer-java-benchmarks"]
 	path = chromarenderer-java-benchmarks
 	url = git@github.com:bensteinert/chromarenderer-java-benchmarks.git
