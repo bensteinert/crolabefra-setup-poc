@@ -1,5 +1,10 @@
-
-include 'chromarenderer-java'
+rootProject.name = 'blog3-example'
+include 'chromarenderer-cpp-benchmarks'
 include 'chromarenderer-java-benchmarks'
 
-rootProject.name = 'blog3-example'
+apply from: 'chromarenderer-cpp-benchmarks/settings.gradle'
+apply from: 'chromarenderer-java-benchmarks/settings.gradle'
+project(':chromarenderer').projectDir = new File(rootDir, 'chromarenderer-cpp-benchmarks/chromarenderer')
+project(':chromarenderer-java').projectDir = new File(rootDir, 'chromarenderer-java-benchmarks/chromarenderer-java')
+
+
