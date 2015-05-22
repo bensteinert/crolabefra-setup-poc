@@ -1,3 +1,6 @@
 [submodule "chromarenderer-java-benchmarks"]
 	path = chromarenderer-java-benchmarks
 	url = git@github.com:bensteinert/chromarenderer-java-benchmarks.git
+[submodule "chromarenderer-cpp-benchmarks"]
+	path = chromarenderer-cpp-benchmarks
+	url = git@github.com:bensteinert/chromarenderer-cpp-benchmarks.git
