@@ -1,4 +1,4 @@
-rootProject.name = 'blog3-example'
+rootProject.name = 'blog-poc'
 include 'chromarenderer-cpp-benchmarks'
 include 'chromarenderer-java-benchmarks'
 
