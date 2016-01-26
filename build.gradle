@@ -1,2 +1,5 @@
-apply plugin: 'idea'
+plugins {
+    id "com.comsysto.gradle.crolabefra.mothership" version "0.1.0"
+    id "idea"
+}
 
