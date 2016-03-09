@@ -1,4 +1,5 @@
 # Cross-Language Benchmarking Framework - POC Project
+
 ## Introduction
 In 2010 I graduated in media computer science in the field computer graphics or, in more detail 'photo'realistic image generation using MonteCarlo path tracing methods. For more details, please have a look at my thesis [here](https://ben-steinert.net). At that time, I implemented a MonteCarlo PathTracer named "Chroma" in C++.
 In 2015 I did a restart of my renderer, but I wanted to take up the challenge with Java, because this is the eco system I work with today in my daily job. And I wanted to see, whether the following statement from 2010 is still valid:
@@ -9,7 +10,7 @@ The following downsides are more or less obvious:
 
 - Garbage collection can cause a lot of pauses and arbitrary memory fragmentation
 - Objects/Values cannot be structured in such a detail as C/C++ allows it (structs, pointers value types)
-- Lack of control over intrinsics (heavy SIMD operations which unleash the true power of todays CPUs)
+- Lack of control over intrinsics (heavy SIMD operations which unleash the true power of todays' CPUs)
 
 Now the motivation is still to get as close as possible. But how would you actually 'measure' it? How can you say whether an alternate implementation in Java performs well? 
 
@@ -35,11 +36,11 @@ The goal of CroLaBeFra is exactly that. To be precise, the following requirement
 The result of the last six months are the following three Gradle plugins which take care of 1. - 4. (The historization topic is currently in 'evaluation'):
 
 - [crolabefra-java-plugin](https://github.com/comsysto/crolabefra-java) ( id: com.comsysto.gradle.crolabefra.java )
-    - Wraps the jmh-gradle-plugin to provide convenient access to a jmh execution task
-    - Converts the Hayai benchmarking results to a CroLaBeFra format
+    - Wraps the [jmh-gradle-plugin](https://github.com/melix/jmh-gradle-plugin) to provide convenient access to a jmh execution task
+    - Converts the JMH benchmarking results to a CroLaBeFra json format
 - [crolabefra-cpp-plugin](https://github.com/comsysto/crolabefra-cpp) ( id: com.comsysto.gradle.crolabefra.cpp )
     - Downloads Hayai from a forked version of Hayai, add the library to the project and assembles it together with your cpp code
-    - Converts the Hayai benchmarking results to a CroLaBeFra format
+    - Converts the Hayai benchmarking results to a CroLaBeFra json format
 - [crolabefra-mothership-plugin](https://github.com/comsysto/crolabefra-mothership) ( id: com.comsysto.gradle.crolabefra.mothership )
     - Looks for CroLaBeFra enhanced modules in the project and executes the according tasks
     - Collects all results
@@ -62,7 +63,7 @@ The only command you need, in order to
 - convert the results
 - create a dashboard 
 
-is:
+is (tested and verified with Gradle 2.8):
 
     gradle crolabefra
 
