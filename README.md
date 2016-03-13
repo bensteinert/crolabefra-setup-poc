@@ -1,7 +1,7 @@
 # Cross-Language Benchmarking Framework - POC Project
 
 ## Introduction
-In 2010 I graduated in media computer science in the field computer graphics or, in more detail 'photo'realistic image generation using MonteCarlo path tracing methods. For more details, please have a look at my thesis [here](https://ben-steinert.net). At that time, I implemented a MonteCarlo PathTracer named "Chroma" in C++.
+In 2010 I graduated in media computer science in the field computer graphics or, in more detail 'photo'realistic image generation using MonteCarlo path tracing methods. For more details, please have a look at my thesis [here](https://ben-steinert.net). At that time, I implemented a Monte Carlo PathTracer named "Chroma" in C++.
 In 2015 I did a restart of my renderer, but I wanted to take up the challenge with Java, because this is the eco system I work with today in my daily job. And I wanted to see, whether the following statement from 2010 is still valid:
 
 > The JVM cannot beat native C/C++ in the field of computer graphics.
@@ -40,7 +40,7 @@ The result of the last six months are the following three Gradle plugins which t
     - Wraps the [jmh-gradle-plugin](https://github.com/melix/jmh-gradle-plugin) to provide convenient access to a jmh execution task
     - Converts the JMH benchmarking results to a CroLaBeFra json format
 - [crolabefra-cpp-plugin](https://github.com/comsysto/crolabefra-cpp) ( id: com.comsysto.gradle.crolabefra.cpp )
-    - Downloads Hayai from a forked version of Hayai, add the library to the project and assembles it together with your cpp code
+    - Downloads a forked version of [Hayai](https://github.com/bensteinert/hayai), adds the library to the project and assembles it together with your cpp code
     - Converts the Hayai benchmarking results to a CroLaBeFra json format
 - [crolabefra-mothership-plugin](https://github.com/comsysto/crolabefra-mothership) ( id: com.comsysto.gradle.crolabefra.mothership )
     - Looks for CroLaBeFra enhanced modules in the project and executes the according tasks
@@ -94,9 +94,9 @@ This is really just a very first drop of my approach! I hope to find the time to
 
 For more background information about the project, I refer to my blog posts:
 
-* Part 1 - [_Cross-language benchmarking made easy?_](http://blog.comsysto.com/2015/02/20/cross-language-benchmarking-made-easy/)
-* Part 2 - [_Cross-language benchmarking – Gradle loves native binaries!_](http://blog.comsysto.com/2015/02/13/cross-language-benchmarking-gradle-loves-native-binaries/)
-* Part 3 - [_Cross-language benchmarking - Git submodules and the single-command cross language benchmark_](http://blog.comsysto.com/2015/06/15/cross-language-benchmarking-part-3-git-submodules-and-the-single-command-cross-language-benchmark/)
+* Part 1 - [_Cross-language benchmarking made easy?_](https://comsysto.com/blog-post/cross-language-benchmarking-made-easy)
+* Part 2 - [_Cross-language benchmarking – Gradle loves native binaries!_](https://comsysto.com/blog-post/cross-language-benchmarking-part-2)
+* Part 3 - [_Cross-language benchmarking - Git submodules and the single-command cross language benchmark_](https://comsysto.com/blog-post/cross-language-benchmarking-part-3)
 
 Please send me your feedback!
 So long!
