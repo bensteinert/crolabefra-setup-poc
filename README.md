@@ -4,7 +4,7 @@
 In 2010 I graduated in media computer science in the field computer graphics or, in more detail 'photo'realistic image generation using MonteCarlo path tracing methods. For more details, please have a look at my thesis [here](https://ben-steinert.net). At that time, I implemented a MonteCarlo PathTracer named "Chroma" in C++.
 In 2015 I did a restart of my renderer, but I wanted to take up the challenge with Java, because this is the eco system I work with today in my daily job. And I wanted to see, whether the following statement from 2010 is still valid:
 
-> C/C++ will outperform Java in the field of computer graphics.
+> The JVM cannot beat native C/C++ in the field of computer graphics.
 
 The following downsides are more or less obvious:
 
@@ -12,7 +12,7 @@ The following downsides are more or less obvious:
 - Objects/Values cannot be structured in such a detail as C/C++ allows it (structs, pointers value types)
 - Lack of control over intrinsics (heavy SIMD operations which unleash the true power of todays' CPUs)
 
-Now the motivation is still to get as close as possible. But how would you actually 'measure' it? How can you say whether an alternate implementation in Java performs well? 
+Now the motivation is still to get as close as possible. But how would you actually 'measure' it? How can you tell whether an alternate implementation in Java performs 'well'? 
 
 ## Benchmarking, yes :-)
 Benchmarking is a good indication to decide whether the performance of an implementation of an algorithm is 'good'. Roughly, 'good' is usually only verifiable when figures like throughput changes, ideally increases. But how to compare implementations in two different lagnuages??
@@ -25,6 +25,7 @@ Cross-language benchmarking is common in the typical language wars. Someone pres
 
 ## CroLaBeFra
 The goal of CroLaBeFra is exactly that. To be precise, the following requirements drove me the last 6 months while working on this topic:
+
 1. Gradle and Gradle Plugins shall be the basis of CroLaBeFra
 2. Java shall be benchmarked with [JMH](http://openjdk.java.net/projects/code-tools/jmh/)
 3. C++ code shall be benchmarked with [Hayai](https://github.com/nickbruun/hayai)
