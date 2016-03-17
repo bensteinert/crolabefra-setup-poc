@@ -14,6 +14,9 @@ The following downsides are more or less obvious:
 
 Now the motivation is still to get as close as possible. But how would you actually 'measure' it? How can you tell whether an alternate implementation in Java performs 'well'? 
 
+## Disclaimer
+This project is neither intended to state things like 'Java is slow' or 'C++ rulez' nor is it currently useful for reliable measures. Too many things and settings are currently handled within the benchmarks itself which makes the resulting numbers hard to compare, given that you think they can be compared at all ;). This project is currently rather a 'what can be done with gradle' sandbox than serious a benchmarking framework. 
+
 ## Benchmarking, yes :-)
 Benchmarking is a good indication to decide whether the performance of an implementation of an algorithm is 'good'. Roughly, 'good' is usually only verifiable when figures like throughput changes, ideally increases. But how to compare implementations in two different lagnuages??
 
