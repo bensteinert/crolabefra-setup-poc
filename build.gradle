@@ -3,3 +3,7 @@ plugins {
     id "idea"
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.10'
+}
+
