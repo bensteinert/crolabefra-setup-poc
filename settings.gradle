@@ -1,4 +1,4 @@
-rootProject.name = 'blog-poc'
+rootProject.name = 'CroLaBeFra-Chroma'
 include 'chromarenderer-cpp-benchmarks'
 include 'chromarenderer-java-benchmarks'
 
