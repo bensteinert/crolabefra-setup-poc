@@ -100,6 +100,7 @@ For more background information about the project, I refer to my blog posts:
 * Part 1 - [_Cross-language benchmarking made easy?_](https://comsysto.com/blog-post/cross-language-benchmarking-made-easy)
 * Part 2 - [_Cross-language benchmarking – Gradle loves native binaries!_](https://comsysto.com/blog-post/cross-language-benchmarking-part-2)
 * Part 3 - [_Cross-language benchmarking - Git submodules and the single-command cross language benchmark_](https://comsysto.com/blog-post/cross-language-benchmarking-part-3)
+* Part 4 - [_Cross-language benchmarking - CroLaBeFra plugins galore_](https://comsysto.com/blog-post/cross-language-benchmarking-part-4)
 
 Please send me your feedback!
 So long!
