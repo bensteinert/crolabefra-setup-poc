@@ -3,8 +3,9 @@ include 'chromarenderer-cpp-benchmarks'
 include 'chromarenderer-java-benchmarks'
 
 apply from: 'chromarenderer-cpp-benchmarks/settings.gradle'
-apply from: 'chromarenderer-java-benchmarks/settings.gradle'
+apply from: 'chromarenderer-java-benchmarks/chromarenderer-java/settings.gradle'
+
 project(':chromarenderer').projectDir = new File(rootDir, 'chromarenderer-cpp-benchmarks/chromarenderer')
-project(':chromarenderer-java').projectDir = new File(rootDir, 'chromarenderer-java-benchmarks/chromarenderer-java')
+project(':chroma-java-core').projectDir = new File(rootDir, 'chromarenderer-java-benchmarks/chromarenderer-java/chroma-java-core')
 
 
